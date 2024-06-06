@@ -1,0 +1,31 @@
+{
+  "extends": "next/core-web-vitals",
+  "plugins": [
+    "@stylistic"
+  ],
+  "rules": {
+    "@stylistic/indent": [
+      "warn",
+      "tab"
+    ],
+    "@stylistic/quotes": [
+      "warn",
+      "double"
+    ],
+    "@stylistic/semi": [
+      "error",
+      "always"
+    ],
+    "@stylistic/comma-dangle": [
+      "warn",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline",
+        "generics": "always-multiline"
+      }
+    ]
+  }
+}

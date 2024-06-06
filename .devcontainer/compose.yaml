@@ -1,0 +1,36 @@
+services:
+  db:
+    image: postgres:16-bookworm
+    restart: unless-stopped
+    env_file:
+      - ./environments/db.env
+    networks:
+      - database
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep inf
+    depends_on:
+      - db
+    env_file:
+      - ./environments/db.env
+      - ./environments/dev.env
+    networks:
+      - database
+    volumes:
+      - pnpm-store:/.pnpm-store:rw
+      - ..:/app:rw
+      - modules:/app/node_modules:rw
+
+networks:
+  database:
+
+
+volumes:
+  postgres-data:
+  pnpm-store:
+    external: true
+  modules:

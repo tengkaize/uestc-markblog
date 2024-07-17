@@ -11,14 +11,14 @@
   "dependencies": {
     "@headlessui/react": "^2",
     "@heroicons/react": "^2",
-    "@prisma/client": "5.15.0",
-    "next": "15.0.0-rc.0",
+    "@prisma/client": "5.17.0",
+    "next": "15.0.0-canary.69",
     "next-auth": "5.0.0-beta.19",
-    "react": "19.0.0-rc-f994737d14-20240522",
-    "react-dom": "19.0.0-rc-f994737d14-20240522"
+    "react": "19.0.0-rc.0",
+    "react-dom": "19.0.0-rc.0"
   },
   "devDependencies": {
-    "@shikijs/rehype": "^1.6",
+    "@shikijs/rehype": "^1.10",
     "@stylistic/eslint-plugin": "^2",
     "@tailwindcss/typography": "^0.5",
     "@types/node": "^20",
@@ -27,18 +27,18 @@
     "@types/react-dom": "npm:types-react-dom@rc",
     "clsx": "^2",
     "eslint": "^8",
-    "eslint-config-next": "15.0.0-rc.0",
+    "eslint-config-next": "15.0.0-canary.69",
     "nodemailer": "^6.9",
-    "prisma": "5.15.0",
+    "prisma": "5.17.0",
     "rehype-stringify": "^10",
     "remark-gfm": "^4",
     "remark-parse": "^11",
     "remark-rehype": "^11",
     "sharp": "^0.33",
     "tailwindcss": "^3.4",
-    "typescript": "^5.4",
+    "typescript": "^5.5",
     "unified": "^11",
     "zod": "^3.23"
   },
-  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771"
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }

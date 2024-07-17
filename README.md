@@ -28,7 +28,6 @@
 建议使用 Docker Compose 运行，需在文件中设置以下环境变量
 
 - `environments/db.env`
-  - `POSTGRES_USER`：数据库用户名
   - `POSTGRES_PASSWORD`：数据库密码
   - `POSTGRES_DB`：数据库名称
 - `environments/auth.env`
@@ -36,7 +35,7 @@
   - `AUTH_URL`：本地运行请设置为 `http://localhost:3000`
   - `AUTH_SECRET`: 运行 `npx auth secret` 以生成
   - `AUTH_EMAIL_USER` 与 `AUTH_EMAIL_PASS`：参见 nodemailer 文档与 `src/lib/auth/index.ts`
-  - `AUTH_GITHUB_ID`：GitHub OAuth Application Client ID 
+  - `AUTH_GITHUB_ID`：GitHub OAuth Application Client ID
   - `AUTH_GITHUB_SECRET`：GitHub OAuth Application Client Secret
 - `environments/app.env`
   - `DATABASE_URL`：一般设置为 `postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}?schema=public`
